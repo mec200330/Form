@@ -1,16 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import CardService from "./CardService/CardService";
 import "./Services.css";
-import image1 from '../../Assets/Img/iron man 2.jpg'
-import image2 from '../../Assets/Img/Iron man.webp'
-import image3 from '../../Assets/Img/los_vengadores.webp'
+import image1 from '../../Assets/Img/html.jpg'
+import image2 from '../../Assets/Img/JS.jpg'
+import image3 from '../../Assets/Img/react.jpg'
 
 const Services = () => {
 
     const servicesArray=[
         {
-            title: "React",
-            subtitle: "Framework",
+            title: "HTML",
+            subtitle: "Maquetado",
             image: image1,
             footer: "Footer",
             link:"#!"
@@ -23,8 +23,8 @@ const Services = () => {
             link:"#!"
         },
         {
-            title: "Bootstrap",
-            subtitle: "Css Style",
+            title: "React",
+            subtitle: "Framework",
             image: image3,
             footer: "Footer",
             link:"#!"
@@ -38,8 +38,8 @@ const Services = () => {
       <Container fluid>
         <Row className="justify-content-md-center">
           <Col xs={12} md={8}>
-            <h2 className="text-center"> Services</h2>
-            <h4 className="pb-3 text-center">Algunos servicios que he realizado</h4>
+            <h2 className="text-center">Lenguajes que conozco</h2>
+            <h4 className="pb-3 text-center">Esta pagina fue diseñada con: </h4>
             <Row xs={1} md={3} className='g-4 mt-4'>
               {servicesArray.map((service, index)=>(
                 <CardService service={service} key={index}/>
